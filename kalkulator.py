@@ -44,7 +44,7 @@ def calculate(num1, num2, operation):
         try:
             result = num1 / num2
         except ZeroDivisionError:
-            result = "Делить на ноль запрещено"
+            result = "Деление на ноль запрещено"
     elif operation == '*':
         result = num1 * num2
     return result
