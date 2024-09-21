@@ -41,7 +41,10 @@ def calculate(num1, num2, operation):
     elif operation == '-':
         result = num1 - num2
     elif operation == '/':
-        result = num1 / num2
+        try:
+            result = num1 / num2
+        except ZeroDivisionError:
+            result = "Делить на ноль запрещено"
     elif operation == '*':
         result = num1 * num2
     return result
