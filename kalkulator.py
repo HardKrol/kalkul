@@ -42,6 +42,8 @@ def calculate(num1, num2, operation):
         result = num1 - num2
     elif operation == '/':
         result = num1 / num2
+    elif operation == '*':
+        result = num1 * num2
     return result
 
 
